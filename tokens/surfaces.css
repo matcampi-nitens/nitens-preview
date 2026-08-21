@@ -1,0 +1,26 @@
+/* Radii, borders, motion. No shadow system: the only shadow in the app is the
+   history drawer (shadow-xl). Flat surfaces separated by 1px hairlines. */
+:root{
+  --radius-sm:4px;
+  --radius-md:6px;
+  --radius-lg:8px;
+  --radius-pill:9999px;
+
+  --border-width:1px;
+  --border-hairline-soft:color-mix(in srgb, var(--color-border) 40%, transparent);
+
+  --shadow-drawer:0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+  --shadow-drawer-light:0 20px 25px -5px rgb(0 0 0 / 0.12), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --motion-fast:0.12s; /* @kind other */
+  --motion-ease:linear; /* @kind other */
+  --hover-surface:var(--color-surface-2);
+  --disabled-opacity:0.4; /* @kind other */
+  --coming-soon-opacity:0.4; /* @kind other */
+
+  /* state tints: a state colour behind text/banner, never a full-strength fill */
+  --tint-human-pending:color-mix(in srgb, var(--color-fsm-human-pending) 12%, transparent);
+  --tint-human-pending-strong:color-mix(in srgb, var(--color-fsm-human-pending) 15%, transparent);
+}
+
+[data-theme="light"]{--shadow-drawer:var(--shadow-drawer-light)}

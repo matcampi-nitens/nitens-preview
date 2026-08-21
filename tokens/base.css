@@ -1,0 +1,11 @@
+/* Base reset, mirroring src/style.css. */
+:root{color-scheme:dark}
+/* Il tema si applica su <html data-theme="light">; senza attributo resta scuro. */
+html,body{height:100%;margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:var(--color-accent-dim);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--color-accent)}
+/* resize handles */
+.rz-x{width:var(--resize-handle);flex-shrink:0;cursor:col-resize;background:transparent;transition:background var(--motion-fast)}
+.rz-y{height:var(--resize-handle);flex-shrink:0;cursor:row-resize;background:transparent;transition:background var(--motion-fast)}
+.rz-x:hover,.rz-y:hover,.rz-x:active,.rz-y:active{background:var(--color-accent);opacity:0.5}

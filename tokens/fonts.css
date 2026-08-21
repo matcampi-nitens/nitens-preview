@@ -1,0 +1,5 @@
+/* Webfonts. The mirror ships no font binaries: BRAND.md names Inter, JetBrains Mono
+   and Cormorant Garamond, all "disponibili su Google Fonts" — so they are loaded from
+   Google Fonts here. Swap these for self-hosted @font-face rules if the brand repo
+   provides binaries. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap");

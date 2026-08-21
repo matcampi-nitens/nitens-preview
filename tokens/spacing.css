@@ -1,0 +1,24 @@
+/* 2px-based scale as used by the app (Tailwind 4 default steps). */
+:root{
+  --space-0-5:2px;
+  --space-1:4px;
+  --space-1-5:6px;
+  --space-2:8px;
+  --space-2-5:10px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+
+  /* layout constants (verbatim from src/style.css) */
+  --spacing-topnav:52px;
+  --spacing-sidebar:220px;
+  --sidebar-min:160px;
+  --sidebar-max:360px;
+  --flow-left-default:480px;
+  --flow-left-min:340px;
+  --flow-left-max:720px;
+  --board-top-default:340px;
+  --drawer-width:380px;
+  --resize-handle:5px;
+}

@@ -1,0 +1,101 @@
+/* Nitens identity is absolute black & white (#000000 / #FFFFFF). No decorative colour.
+   The ONLY exception is the functional FSM state palette below, applied as badge/accent
+   surfaces only — never as a decorative fill. Values are verbatim from
+   cockpit-v2 src/style.css @theme. */
+:root{
+  /* --- identity --- */
+  --nitens-black:#000000;
+  --nitens-white:#ffffff;
+
+  /* --- chrome (base, verbatim token names from the app) --- */
+  --color-bg:#000000;
+  --color-surface:#0d0d0d;
+  --color-surface-2:#141414;
+  --color-sidebar:#080808;
+  --color-border:#222222;
+  --color-accent:#ffffff;
+  --color-accent-dim:#cfcfcf;
+  --color-text:#e8e8e8;
+  --color-text-dim:#9a9a9a;
+  --color-muted:#737373;
+
+  /* --- FSM state palette (semantic, functional only) --- */
+  --color-fsm-draft:#6b7280;
+  --color-fsm-ready:#3b82f6;
+  --color-fsm-agent-running:#f59e0b;
+  --color-fsm-maker-done:#8b5cf6;
+  --color-fsm-adversarial:#ec4899;
+  --color-fsm-human-pending:#f97316;
+  --color-fsm-approved:#22c55e;
+  --color-fsm-done:#16a34a;
+  --color-fsm-rejected:#ef4444;
+  --color-fsm-blocked:#b91c1c;
+
+  /* --- review severity (FindingCard, mock Finding severities) --- */
+  --color-sev-critical:#dc2626;
+  --color-sev-high:#ef4444;
+  --color-sev-medium:#f59e0b;
+  --color-sev-low:#3b82f6;
+  --color-sev-none:#737373;
+
+  /* testo sopra un fill di stato (chip severità, badge conteggio, Approva) */
+  --on-state:#000000;
+
+  /* --- semantic aliases --- */
+  --surface-page:var(--color-bg);
+  --surface-panel:var(--color-surface);
+  --surface-raised:var(--color-surface-2);
+  --surface-nav:var(--color-sidebar);
+  --border-hairline:var(--color-border);
+  --border-strong:var(--color-accent);
+  --text-primary:var(--color-text);
+  --text-secondary:var(--color-text-dim);
+  --text-tertiary:var(--color-muted);
+  --text-emphasis:var(--color-accent);
+  --state-done:var(--color-fsm-done);
+  --state-approved:var(--color-fsm-approved);
+  --state-blocked:var(--color-fsm-blocked);
+  --state-error:var(--color-fsm-rejected);
+  --state-progress:var(--color-fsm-ready);
+  --state-running:var(--color-fsm-agent-running);
+  --state-human:var(--color-fsm-human-pending);
+  --state-neutral:var(--color-muted);
+}
+
+/* ── Tema chiaro ────────────────────────────────────────────────────────────
+   Il brand è bianco/nero assoluto: il tema chiaro è l'inversione esatta, non
+   una palette diversa. I colori di stato sono scuriti per tenere il contrasto
+   su fondo bianco; restano gli stessi ruoli semantici e gli stessi confini
+   d'uso (badge, glifi, accenti, tint) — nessun colore decorativo in più. */
+[data-theme="light"]{
+  --color-bg:#ffffff;
+  --color-surface:#fafafa;
+  --color-surface-2:#f1f1f1;
+  --color-sidebar:#f6f6f6;
+  --color-border:#e0e0e0;
+  --color-accent:#000000;
+  --color-accent-dim:#3a3a3a;
+  --color-text:#1a1a1a;
+  --color-text-dim:#5c5c5c;
+  --color-muted:#8a8a8a;
+
+  --color-fsm-draft:#4b5563;
+  --color-fsm-ready:#2563eb;
+  --color-fsm-agent-running:#b45309;
+  --color-fsm-maker-done:#6d28d9;
+  --color-fsm-adversarial:#be185d;
+  --color-fsm-human-pending:#c2410c;
+  --color-fsm-approved:#15803d;
+  --color-fsm-done:#166534;
+  --color-fsm-rejected:#dc2626;
+  --color-fsm-blocked:#991b1b;
+
+  --color-sev-critical:#b91c1c;
+  --color-sev-high:#dc2626;
+  --color-sev-medium:#b45309;
+  --color-sev-low:#2563eb;
+  --color-sev-none:#6b7280;
+
+  --on-state:#ffffff;
+  color-scheme:light;
+}
