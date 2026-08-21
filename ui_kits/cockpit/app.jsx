@@ -21,7 +21,7 @@ class ScreenBoundary extends React.Component {
 
 function App() {
   const data = window.CockpitData;
-  const [view, setView] = React.useState('flow');
+  const [view, setView] = React.useState(() => new URLSearchParams(location.search).get('view') || 'flow');
   const [elapsed, setElapsed] = React.useState(12);
   const [busy, setBusy] = React.useState(false);
   const [decideError, setDecideError] = React.useState('');
