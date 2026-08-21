@@ -1,4 +1,3 @@
-import React from 'react';
 
 const VARIANTS = {
   accent: { background: 'var(--color-accent)', color: 'var(--color-bg)', border: '1px solid transparent', fontWeight: 700 },
@@ -14,7 +13,7 @@ const SIZES = {
   cta: { padding: '12px 24px', fontSize: 'var(--text-base)', borderRadius: 'var(--radius-lg)' },
 };
 
-export function Button({ variant = 'outline', size = 'md', disabled, loading, icon, children, onClick, title, style }) {
+function Button({ variant = 'outline', size = 'md', disabled, loading, icon, children, onClick, title, style }) {
   const [hover, setHover] = React.useState(false);
   const v = VARIANTS[variant] || VARIANTS.outline;
   const isDim = disabled || loading;
